@@ -1,0 +1,7 @@
+.logo {
+    width: 5.5625rem;
+    height: 1.5rem;
+    background: rgb(229 9 20 / 100%);
+    mask: url("/netflix-logo.svg") no-repeat center;
+    margin-right: auto;
+}

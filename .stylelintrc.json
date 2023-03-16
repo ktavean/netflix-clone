@@ -1,0 +1,14 @@
+{
+    "processors": ["stylelint-processor-html"],
+    "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier"],
+    "rules": {
+        "indentation": 4,
+        "selector-class-pattern": null,
+        "at-rule-no-unknown": null,
+        "no-empty-source": null,
+        "no-descending-specificity": [true, {
+            "severity": "warning"
+        }]
+
+    }
+}
