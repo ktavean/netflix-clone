@@ -1,0 +1,242 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.innerContainer {
+    max-width: calc(100% - 3rem);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (min-width: 600px) {
+        max-width: calc(100% - 4rem);
+    }
+
+    @media only screen and (min-width: 1280px) {
+        max-width: calc( 83.33333333333334% - 6rem );
+    }
+
+    @media only screen and (min-width: 1920px) {
+        max-width: calc( 66.66666666666666% - 6rem );
+    }
+}
+
+.background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 125%;
+    object-fit: cover;
+    transform: translateY(-20%);
+
+    @media only screen and (min-width: 1300px) {
+        transform: translateY(-20%) scale(1.05);
+    }
+
+    @media only screen and (min-width: 1300px) {
+        transform: translateY(-20%) scale(1.125);
+    }
+
+    @media only screen and (min-width: 1300px) {
+        transform: translateY(-20%) scale(1.25);
+    }
+}
+
+.backgroundEffect {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(
+            to top, rgb(0 0 0 / 80%) 0,
+            rgb(0 0 0 / 0%) 60%,
+            rgb(0 0 0 / 80%) 100%
+        );
+}
+
+.backgroundEffect::after {
+    content: "";
+    inset: 0;
+    background: rgb(0 0 0 / 40%);
+    position: absolute;
+}
+
+.topbarContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.topbarInnerContainer {
+    display: flex;
+    gap: 0.5rem;
+
+    @media only screen and (min-width: 960px) {
+        gap: 1.5rem;
+    }
+}
+
+.innerWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 4rem;
+
+    @media only screen and (min-width: 599px) {
+        margin-block-start: 5.8rem;
+        margin-block-end: 2.3rem;
+    }
+
+    @media only screen and (min-width: 600px) {
+        margin-block-start: 6.8rem;
+        margin-block-end: 3.3rem;
+    }
+
+    @media only screen and (min-width: 656px) {
+        margin-block-start: 8rem;
+        margin-block-end: 4.5rem;
+    }
+
+    @media only screen and (min-width: 709px) {
+        margin-block-start: 8.9rem;
+        margin-block-end: 5.4rem;
+    }
+
+    @media only screen and (min-width: 960px) {
+        margin-block-start: 13.5rem;
+        margin-block-end: 10.1rem;
+    }
+}
+
+.header {
+    @media only screen and (min-width: 960px) {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    color: rgb(255 255 255);
+    z-index: 1;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1.5rem;
+    margin-block-start: 1rem;
+    z-index: 1;
+
+    @media only screen and (min-width: 599px) {
+        padding: 0 2rem;
+    }
+}
+
+.subtitle {
+    @media only screen and (min-width: 960px) {
+        font-size: 1.5rem;
+    }
+}
+
+.formInner {
+    position: relative;
+    width: 100%;
+    max-width: 36.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    @media only screen and (min-width: 599px) {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    &:focus-within {
+        .label {
+            inset-block-start: 5%;
+            inset-inline-start: 1.2rem;
+            font-size: 0.7rem;
+        }
+    }
+
+}
+
+.formSubtitle {
+    margin-block-start: 0.5rem;
+    line-height: 1.6875rem;
+    text-align: center;
+
+    @media only screen and (min-width: 959px) {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+}
+
+.label {
+    position: absolute;
+    inset-block-start: 11%;
+    inset-inline-start: 1rem;
+    font-size: 1rem;
+    color: rgb(255 255 255 / 70%);
+    font-weight: 300;
+    transition-property: top,font-size,line-height;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+
+    @media only screen and (min-width: 599px) {
+        inset-block-start: 32%;
+    }
+}
+
+.emailInput {
+    width: 100%;
+    padding-block: 0.9rem;
+    padding-inline: 1.1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.25rem;
+    background: rgb(22 22 22 / 70%);
+    border-color: rgb(128 128 128 / 70%);
+
+    @media only screen and (min-width: 599px) {
+        padding-block: 1.8rem 0.5rem;
+    }
+}
+
+.buttonInner {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    font-size: 1.125rem;
+    padding: 0.53rem 0.25rem 0.53rem 0rem;
+
+    @media only screen and (min-width: 599px) {
+        font-size: 1.5rem;
+        padding: 0.55rem 0.65rem;
+    }
+}
+
+.arrow {
+    background: rgb(255 255 255);
+    mask: url("/home/side-arrow.svg") no-repeat center;
+    pointer-events: none;
+    width: 1rem;
+    height: 1rem;
+}

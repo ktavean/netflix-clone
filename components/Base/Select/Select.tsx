@@ -1,4 +1,4 @@
-import styles from "styles/select.module.css";
+import styles from "./Select.module.scss";
 
 // eslint-disable-next-line no-unused-vars
 export default function Select({ children }: { children: JSX.Element[] }) {

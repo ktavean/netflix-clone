@@ -4,4 +4,9 @@
     background: rgb(229 9 20 / 100%);
     mask: url("/netflix-logo.svg") no-repeat center;
     margin-right: auto;
+
+    @media only screen and (min-width: 960px) {
+        width: 9.25rem;
+        height: 2.5rem;
+    }
 }

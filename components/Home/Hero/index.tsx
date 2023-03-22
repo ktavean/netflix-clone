@@ -1,4 +1,4 @@
-import styles from "styles/hero.module.css";
+import styles from "./Hero.module.scss";
 import TopBar from "./TopBar";
 import Content from "./Content";
 import Form from "./Form";
@@ -14,8 +14,10 @@ export default function Hero() {
                 />
                 <div className={styles.backgroundEffect} />
                 <TopBar />
-                <Content />
-                <Form />
+                <div className={styles.innerWrapper}>
+                    <Content />
+                    <Form />
+                </div>
             </div>
         </div>
 

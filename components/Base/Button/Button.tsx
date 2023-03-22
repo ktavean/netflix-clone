@@ -1,4 +1,4 @@
-import styles from "styles/button.module.css";
+import styles from "./Button.module.scss";
 
 interface ButtonProps {
     children: JSX.Element | JSX.Element[]
@@ -7,7 +7,7 @@ interface ButtonProps {
 
 export default function Button({ children, className }: ButtonProps) {
     return (
-        <span className={`${styles.button} ${className}`}>
+        <span className={`${className} ${styles.button}`}>
             {children}
         </span>
     )
