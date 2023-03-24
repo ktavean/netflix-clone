@@ -204,6 +204,12 @@
     }
 }
 
+.labelActive {
+    inset-block-start: 5%;
+    inset-inline-start: 1.2rem;
+    font-size: 0.7rem;
+}
+
 .emailInput {
     width: 100%;
     padding-block: 0.9rem;
@@ -235,7 +241,7 @@
 
 .arrow {
     background: rgb(255 255 255);
-    mask: url("/home/side-arrow.svg") no-repeat center;
+    mask: url("../../../public/home/side-arrow.svg") no-repeat center;
     pointer-events: none;
     width: 1rem;
     height: 1rem;

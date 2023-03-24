@@ -28,7 +28,7 @@ export default function Sections() {
                     <div className={styles.imageContainer}>
                         <img src="home/mobile.jpg" className={styles.image} alt="mobile" />
                         <div className={styles.animationContainer}>
-                            <img src="/home/boxshot.png" className={styles.animationImage} alt="boxshot" />
+                            <img src="home/boxshot.png" className={styles.animationImage} alt="boxshot" />
                             <div className={styles.animationText}>
                                 <p className={styles.animationTitle}>{home["section-two"].animation.title}</p>
                                 <p className={styles.animationSubtitle}>{home["section-two"].animation.subtitle}</p>

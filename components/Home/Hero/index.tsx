@@ -9,7 +9,7 @@ export default function Hero() {
             <div className={styles.innerContainer}>
                 <img
                     alt="background"
-                    src="/home/hero-background.jpg"
+                    src="home/hero-background.jpg"
                     className={styles.background}
                 />
                 <div className={styles.backgroundEffect} />
