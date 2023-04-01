@@ -1,3 +1,4 @@
+import type { MouseEventHandler } from "react";
 import styles from "./Select.module.scss";
 
 // eslint-disable-next-line no-unused-vars

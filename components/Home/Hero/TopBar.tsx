@@ -23,14 +23,14 @@ export default function TopBar() {
         <div className={styles.topbarContainer}>
             <BaseLogo />
             <div className={styles.topbarInnerContainer}>
-                <BaseSelect language={languages[locale]} onClick={handleClick}>
+                <BaseSelect language={languages[locale as keyof object]} onClick={handleClick}>
                     <div className={
                         `${languageStyles.languageContainer}
                         ${visible ? languageStyles.languageContainerVisible : null}`
                     }>
                         {locales?.map((lang) => (
                             <Link href="/" locale={lang} key={lang} className={languageStyles.languageOption}>
-                                {languages[lang as keyof Object]}
+                                {languages[lang as keyof object]}
                             </Link>
                         ))}
                     </div>
