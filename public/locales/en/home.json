@@ -5,7 +5,8 @@
         "subtitle-one": "Watch anywhere. Cancel anytime.",
         "subtitle-two": "Ready to watch? Enter your email to create or restart your membership.",
         "email": "Email address",
-        "get-started": "Get Started"
+        "get-started": "Get Started",
+        "background": "home/hero-background-en.jpg"
     },
     "section-one": {
         "title": "Enjoy on your TV.",

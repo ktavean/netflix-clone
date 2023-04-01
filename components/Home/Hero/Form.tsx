@@ -1,6 +1,6 @@
+import { useTranslation } from "next-i18next";
 import { FormEvent, useState } from "react";
 import BaseButton from "@/components/Base/Button/Button";
-import home from "content/home.json";
 import styles from "./Hero.module.scss";
 
 export default function Form() {
@@ -12,9 +12,10 @@ export default function Form() {
         }
         setActive(false);
     }
+    const { t } = useTranslation("home");
     return (
         <form className={styles.form}>
-            <p className={styles.formSubtitle}>{home.hero["subtitle-two"]}</p>
+            <p className={styles.formSubtitle}>{t("hero.subtitle-two")}</p>
             <div className={styles.formInner}>
                 <label
                     htmlFor="email"
@@ -23,7 +24,7 @@ export default function Form() {
                         ${styles.label}
                     `}
                 >
-                    {home.hero.email}
+                    {t("hero.email")}
                 </label>
                 <input
                     type="text"
@@ -34,7 +35,7 @@ export default function Form() {
                 <BaseButton>
                     <div className={styles.buttonInner}>
                         <a href="#">
-                            {home.hero["get-started"]}
+                            {t("hero.get-started")}
                         </a>
                         <span className={styles.arrow} />
                     </div>
