@@ -1,4 +1,5 @@
 .select {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,4 +41,33 @@
     @media only screen and (min-width: 601px) {
         display: block;
     }
+}
+
+.languageOption {
+    padding: 0.3rem 0 0.3rem 0.3rem;
+    text-align: left;
+    font-weight: 300;
+    font-size: 1rem;
+
+    &:hover {
+        background-color: #52525d
+    }
+}
+
+.languageContainer {
+    width: 100%;
+    min-width: 4.5rem;
+    position: absolute;
+    inset-block-start: 2rem;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    gap: 0.4rem;
+    padding-block: 0.25rem;
+    border-radius: 0.2rem;
+    background-color: #e9e9ed
+}
+
+.languageContainerVisible {
+    visibility: visible;
 }
