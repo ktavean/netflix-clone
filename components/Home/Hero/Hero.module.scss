@@ -89,10 +89,15 @@
     flex-direction: column;
     margin-block-start: 4rem;
 
-    @media only screen and (min-width: 599px) {
-        margin-block-start: 5.8rem;
-        margin-block-end: 2.3rem;
-    }
+    /* @media only screen and (min-width: 599px) {
+    //     margin-block-start: 5.8rem;
+    //     margin-block-end: 2.3rem;
+
+        this has been removed by netflix for some reason.
+        i guess they realized it was a weird edge case
+        i'll keep it just in case, though.
+
+    } */
 
     @media only screen and (min-width: 600px) {
         margin-block-start: 6.8rem;
@@ -162,17 +167,9 @@
     align-items: center;
     gap: 1rem;
 
-    @media only screen and (min-width: 599px) {
+    @media only screen and (min-width: 600px) {
         flex-direction: row;
         gap: 0.5rem;
-    }
-
-    &:focus-within {
-        .label {
-            inset-block-start: 5%;
-            inset-inline-start: 1.2rem;
-            font-size: 0.7rem;
-        }
     }
 
 }
@@ -185,43 +182,6 @@
     @media only screen and (min-width: 959px) {
         font-size: 1.25rem;
         line-height: 1.875rem;
-    }
-}
-
-.label {
-    position: absolute;
-    inset-block-start: 11%;
-    inset-inline-start: 1rem;
-    font-size: 1rem;
-    color: rgb(255 255 255 / 70%);
-    font-weight: 300;
-    transition-property: top,font-size,line-height;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
-
-    @media only screen and (min-width: 599px) {
-        inset-block-start: 32%;
-    }
-}
-
-.labelActive {
-    inset-block-start: 5%;
-    inset-inline-start: 1.2rem;
-    font-size: 0.7rem;
-}
-
-.emailInput {
-    width: 100%;
-    padding-block: 0.9rem;
-    padding-inline: 1.1rem;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 0.25rem;
-    background: rgb(22 22 22 / 70%);
-    border-color: rgb(128 128 128 / 70%);
-
-    @media only screen and (min-width: 599px) {
-        padding-block: 1.8rem 0.5rem;
     }
 }
 

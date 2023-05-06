@@ -1,0 +1,63 @@
+.container {
+    width: 100%;
+    position: relative;
+    display: flex;
+
+    &:focus-within {
+        .label {
+            transform:
+                translateX(1.1rem)
+                translateY(20%);
+            font-size: 0.7rem;
+        }
+    }
+}
+
+.label {
+    position: absolute;
+    transform:
+        translateX(1rem)
+        translateY(65%);
+    font-size: 1rem;
+    color: rgb(255 255 255 / 70%);
+    font-weight: 300;
+    cursor: text;
+    transition-property: transform,font-size,line-height;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+
+    @media only screen and (min-width: 599px) {
+        inset-block-start: 7%;
+    }
+}
+
+.labelActive {
+    transform:
+        translateX(1.1rem)
+        translateY(20%);
+    font-size: 0.7rem;
+}
+
+.input {
+    width: 100%;
+    padding-block: 0.9rem;
+    padding-inline: 1.1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.25rem;
+    background: rgb(22 22 22 / 70%);
+    border-color: rgb(128 128 128 / 70%);
+
+    @media only screen and (min-width: 599px) {
+        padding-block: 1.8rem 0.5rem;
+    }
+}
+
+.colored {
+    background: rgb(109, 105, 105);
+    border-radius: 0.25rem;
+
+    .input {
+        border: none;
+    }
+}

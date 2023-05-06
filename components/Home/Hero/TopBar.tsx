@@ -36,7 +36,7 @@ export default function TopBar() {
                     </div>
                 </BaseSelect>
                 <BaseButton>
-                    <a href="#">{t("hero.sign-in")}</a>
+                    <a href="sign-in">{t("hero.sign-in")}</a>
                 </BaseButton>
             </div>
         </div>
