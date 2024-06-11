@@ -3,7 +3,7 @@
 
 This is a Netflix Clone I created as a final project for The Odin Project's FE course. Currently working on a backend and i18n as well.
 
-**Access it [here](https://ktavean-netflix-clone.netlify.app/).**
+**Access it [here](https://6668627bd5fa1e162af20a65--nflx-clone.netlify.app/).**
 
 **Your antivirus might pop up saying this is a phishing website. It most definitely is not, but I guess it's just that credible.**
 
